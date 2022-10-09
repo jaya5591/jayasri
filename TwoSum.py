@@ -20,4 +20,12 @@ def twosum(a,target):
 res=twosum(a,target)
 print(res)
     
-                
+###another method                
+def twosum(x,t):
+    for i in range(len(x)):
+        y=t-x[i]
+        if y in x:
+            index=x.index(y)
+            return [i,index]
+res=twosum(x,t)
+print(res)
